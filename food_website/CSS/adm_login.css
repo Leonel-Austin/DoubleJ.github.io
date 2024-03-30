@@ -1,0 +1,59 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(90deg, #ffe259, #ffa751) ;
+    padding-top: 5em;
+}
+
+p {
+    background: -webkit-linear-gradient(300deg, #2e2e2e, #ff3300, #1f1f1f);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.typewriter p {
+padding-top:15px;
+padding-bottom:15px;
+padding-left: 160px;
+font-size: 34px;
+font-weight: bold;
+overflow: hidden; /* Ensures the content is not revealed until the animation */ 
+border-right: 20px solid #ff0000; /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .15em; /* Adjust as needed */
+animation: 
+    typing 3.5s steps(30 , end),
+    blink-caret .5s infinite;
+} 
+.loginbtn {
+    color: #ffffff;
+    font-weight: bold;
+    background-image: linear-gradient(#444444, #050505, #444444) ;
+    border: 2px solid #3b3b3b;
+}
+.loginbtn:hover {
+    color: #050505;
+    font-weight: bold;
+    background-image: linear-gradient(#afafaf, #ffffff, #afafaf) ;
+    border: 2px solid #3b3b3b;
+}
+
+@media (max-width: 800px) {
+    .typewriter p {
+        font-size: 18px;
+        padding-left: 0px;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+100% { border-color: #ff0000 }
+}
